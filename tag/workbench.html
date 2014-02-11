@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+        <meta charset="utf-8" />
+        <title>home of berend - workbench</title>
+        <link rel="stylesheet" href="/theme/css/main.css" />
+
+        <!--[if IE]>
+            <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+        <![endif]-->
+</head>
+
+<body id="index" class="home">
+<a href="http://github.com/berend">
+<img style="position: absolute; top: 0; right: 0; border: 0;" src="http://s3.amazonaws.com/github/ribbons/forkme_right_red_aa0000.png" alt="Fork me on GitHub" />
+</a>
+        <header id="banner" class="body">
+                <h1><a href="/">home of berend </a></h1>
+                <nav><ul>
+                    <li><a href="/category/blog.html">blog</a></li>
+                </ul></nav>
+        </header><!-- /#banner -->
+
+            <aside id="featured" class="body">
+                <article>
+                    <h1 class="entry-title"><a href="/customizing-mysql-workbench.html">Customizing MySQL Workbench</a></h1>
+<footer class="post-info">
+        <abbr class="published" title="2014-02-04T00:00:00">
+                Di 04 Februar 2014
+        </abbr>
+
+        <address class="vcard author">
+                By <a class="url fn" href="/author/berend.html">berend</a>
+        </address>
+<p>In <a href="/category/blog.html">blog</a>. </p>
+<p>tags: <a href="/tag/mysql.html">mysql</a><a href="/tag/workbench.html">workbench</a><a href="/tag/python.html">python</a></p>
+</footer><!-- /.post-info --><p><strong>Overview</strong></p>
+<p>First let us outline the targets we want to archieve with this blog posting:
+<em> Write a plugin for MySQL Workbench to do something with the sql output
+</em> For this script add an icon to the query window toolbar and assign a shortcut to it</p>
+<p>Since I have to work a lot with Jira, the bug/issue tracker from Atlassian, I sometimes have to put some sql results into a ticket. Jira has a description syntax that is really easy but formatting longer tables is boring, so lets automate this.</p>
+<p>So our custom script should do the following:
+<em> execute the current query in the query window (or selection if some text is selected)
+</em> generate a text output with the query with code formatting and the result in a jira formatted table with header</p>
+<p><strong>Writing a plugin script</strong>
+There are at least two supported languages: lua and python. I chose python. There is not much documentation, but I found this page, which links some ressource. One of them shows us how to execute a query and return the output to the text output tab of mysql workbench. This is exactly what we want. 5 min later after some string addition stuff the script is complete and works! Most of the things are straight forward, but I will explain some parts that are needed for interaction with workbench.</p>
+<p>add code plugin here, check gist integration</p>                </article>
+            </aside><!-- /#featured -->
+            </ol><!-- /#posts-list -->
+            </section><!-- /#content -->
+        <section id="extras" class="body">
+                <div class="blogroll">
+                        <h2>blogroll</h2>
+                        <ul>
+                            <li><a href="http://getpelican.com/">Pelican</a></li>
+                            <li><a href="http://python.org/">Python.org</a></li>
+                        </ul>
+                </div><!-- /.blogroll -->
+                <div class="social">
+                        <h2>social</h2>
+                        <ul>
+
+                            <li><a href="https://plus.google.com/u/0/113188176155658359858/posts">Google+</a></li>
+                            <li><a href="https://twitter.com/berendkapelle">@berendkapelle</a></li>
+                        </ul>
+                </div><!-- /.social -->
+        </section><!-- /#extras -->
+
+        <footer id="contentinfo" class="body">
+                <address id="about" class="vcard body">
+                Proudly powered by <a href="http://getpelican.com/">Pelican</a>, which takes great advantage of <a href="http://python.org">Python</a>.
+                </address><!-- /#about -->
+
+                <p>The theme is by <a href="http://coding.smashingmagazine.com/2009/08/04/designing-a-html-5-layout-from-scratch/">Smashing Magazine</a>, thanks!</p>
+        </footer><!-- /#contentinfo -->
+
+</body>
+</html>
