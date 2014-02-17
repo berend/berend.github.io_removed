@@ -55,21 +55,12 @@
 <p>First of all, the project structure. I have two git repositories, one for all pelican content and customizations(I will call that from now on "source folder", and one for the final output (called "output folder"). The output is the HTML part you are hosting on github pages, so the repository name HAS to be "github.com/<you_account>/<you_account>.github.io". For the source git, choose any name you want.</p>
 <p>So, two gits: blog_source and berend.github.io.</p>
 <p>I have a special folder where I keep all my virtualenv, I created one for my blog there:</p>
-<div class="highlight"><pre><span class="n">virtualenv</span> <span class="n">pelican</span>
-</pre></div>
-
-
+<p><code>virtualenv pelican</code></p>
 <p>Then activate it:</p>
-<div class="highlight"><pre><span class="n">source</span> <span class="n">pelican</span><span class="o">/</span><span class="n">bin</span><span class="o">/</span><span class="n">activate</span>
-</pre></div>
-
-
+<p><code>source pelican/bin/activate</code></p>
 <p>Install all the needed python packages. In my case I needed pelican and markdown:</p>
-<div class="highlight"><pre><span class="n">pip</span> <span class="n">install</span> <span class="n">pelican</span>
-<span class="n">pip</span> <span class="n">install</span> <span class="n">markdown</span>
-</pre></div>
-
-
+<p><code>pip install pelican</code></p>
+<p><code>pip install markdown</code></p>
 <p>Move to your output directory.
 I assume, you already created a repository named "<you_account>.github.io". Clone this to the output folder:
 <code>git clone &lt;you_account&gt;.github.io</code>. All the HTML will be created here. Right now it should be empty.</p>
@@ -82,29 +73,13 @@ Now you should have the basic structure in your source, and as well as the defau
 <p>I use markdown as markup language. Pelican supports others, at least REST. But Markdown is widely known. I do know from some personal project and github as well.</p>
 <p><strong>Hosting on github</strong></p>
 <p>OK, having your own top level domain seems cool, but the administration overhead is just too much me. But feel free to host your project on any webserver you want. Since you only have to deal with static pages, there should not be much trouble. No database, no scripting language, etc. Just use FTP in stead of git to bring the current content online.</p>
-<p>When you hot your blog on github, you can use all the power of github, you automatically have an issue tracker, other people can collaborate, make suggestions, fix typos, even write own article and send them to you - all via git. And you get to learn some parts of git or github, you might not have encountered elsewhere.</p>
+<p>When you hot your blog on github, you can use all the power of github, you automatically have an issue tracker, other people can collaborate, make suggestions, fix typos, even write own article and send them to you - all via git. And you get to learn some parts of git or github, you might not have encountered elsewhere</p>
 <p><strong>Comments</strong></p>
-<p>Comments are the only part that should be dynamic on a blog. If you dont want any comments, just skip this part. I found two comment providers. First is Disqus, second is Google+. Disqus is already integrated in pelican, just setup an account at disqus and enter the account name in your pelican.conf.</p>
-<p>Setting up the google+ comment connection is a bit harder. It works like this. Here is a blog entry with intructions how to do it. Since many people don't want to comment via Google+ or don't want a Google+ Account at all, I will stick to disqus. (Fun fact: Disqus is written in python and one of the largest Django Websites out there).</p>
+<p>Comments are the only part that should be dynamic on a blog. If you dont want any comments, just skip this part. I found two comment provider. First is Disqus, second is Google+. Disqus is already integrated in pelican, just setup an account at disqus and enter the account name in your pelican.conf.</p>
+<p>Setting up the google+ comment connection is a bit harder. It works like this. First install this plugin for pelican:
+<code>yadayada</code></p>
 <p><strong>Themes</strong></p>
-<p>Right now you are using the default template for your blog. You don't have to. there is plenty of material out there you can easily use. I will write up later how to do that. Right now I just want to bring this online.</p>
-<p><strong> Including code examples </strong></p>
-<div class="highlight"><pre><span class="kn">import</span> <span class="nn">test</span>
-<span class="k">print</span><span class="p">(</span><span class="s">&quot;this is a test&quot;</span><span class="p">)</span>
-</pre></div>
-
-
-<p>By identing code with 4 spaces or tab pelican and markdown will do the rest. Syntsax highlighting can be done by prefixing the code with <code>:::python</code> or any other supported language. The example above looks like this in the source:</p>
-<div class="highlight"><pre><span class="n">____</span><span class="o">:::</span><span class="n">python</span>
-<span class="n">____import</span> <span class="n">test</span>
-<span class="n">____print</span><span class="p">(</span><span class="s">&quot;this is a test&quot;</span><span class="p">)</span>
-</pre></div>
-
-
-<p>with _ representing a space. Really simple!</p>
-<p><strong> Include images </strong><br />
-Here is a small image: </p>
-<p><img src="img/testpicture.png" alt="[Testpicture ]" title="[Testpicture ]"></p>
+<p>Right now you are using the default template for your blog. You dont have to. there is plenty of material out there you can easily use. I will write up later how to do that. Right now I just want to bring this online.</p>
     </div><!-- /.entry-content -->
 
   </article>
@@ -136,7 +111,7 @@ Here is a small image: </p>
         </footer><!-- /#contentinfo -->
 
 <script type="text/javascript">
-    var disqus_shortname = 'http://berendkapelle.disqus.com/';
+    var disqus_shortname = 'berendkapelle.disqus.com/';
     (function () {
         var s = document.createElement('script'); s.async = true;
         s.type = 'text/javascript';

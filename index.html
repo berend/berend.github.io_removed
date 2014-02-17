@@ -23,41 +23,7 @@
 
             <aside id="featured" class="body">
                 <article>
-                    <h1 class="entry-title"><a href="/customizing-mysql-workbench.html">Customizing MySQL Workbench</a></h1>
-<footer class="post-info">
-        <abbr class="published" title="2014-02-04T00:00:00">
-                Di 04 Februar 2014
-        </abbr>
-
-        <address class="vcard author">
-                By <a class="url fn" href="/author/berend.html">berend</a>
-        </address>
-<p>In <a href="/category/blog.html">blog</a>. </p>
-<p>tags: <a href="/tag/mysql.html">mysql</a><a href="/tag/workbench.html">workbench</a><a href="/tag/python.html">python</a></p>
-</footer><!-- /.post-info --><p><strong>Overview</strong></p>
-<p>First let us outline the targets we want to archieve with this blog posting:
-<em> Write a plugin for MySQL Workbench to do something with the sql output
-</em> For this script add an icon to the query window toolbar and assign a shortcut to it</p>
-<p>Since I have to work a lot with Jira, the bug/issue tracker from Atlassian, I sometimes have to put some sql results into a ticket. Jira has a description syntax that is really easy but formatting longer tables is boring, so lets automate this.</p>
-<p>So our custom script should do the following:
-<em> execute the current query in the query window (or selection if some text is selected)
-</em> generate a text output with the query with code formatting and the result in a jira formatted table with header</p>
-<p><strong>Writing a plugin script</strong>
-There are at least two supported languages: lua and python. I chose python. There is not much documentation, but I found this page, which links some ressource. One of them shows us how to execute a query and return the output to the text output tab of mysql workbench. This is exactly what we want. 5 min later after some string addition stuff the script is complete and works! Most of the things are straight forward, but I will explain some parts that are needed for interaction with workbench.</p>
-<p>add code plugin here, check gist integration</p><p>There are <a href="/customizing-mysql-workbench.html#disqus_thread">comments</a>.</p>                </article>
-            </aside><!-- /#featured -->
-                <section id="content" class="body">
-                    <h1>Other articles</h1>
-                    <hr />
-                    <ol id="posts-list" class="hfeed">
-
-            <li><article class="hentry">
-                <header>
-                    <h1><a href="/further-blog-tuning.html" rel="bookmark"
-                           title="Permalink to Further Blog tuning">Further Blog tuning</a></h1>
-                </header>
-
-                <div class="entry-content">
+                    <h1 class="entry-title"><a href="/further-blog-tuning.html">Further Blog tuning</a></h1>
 <footer class="post-info">
         <abbr class="published" title="2013-12-27T00:00:00">
                 Fr 27 Dezember 2013
@@ -68,10 +34,17 @@ There are at least two supported languages: lua and python. I chose python. Ther
         </address>
 <p>In <a href="/category/blog.html">blog</a>. </p>
 <p>tags: <a href="/tag/blog.html">blog</a><a href="/tag/pelican.html">pelican</a></p>
-</footer><!-- /.post-info -->                <p>Code highlighting, how to display code in pelican generated websites</p>
-                <a class="readmore" href="/further-blog-tuning.html">read more</a>
-<p>There are <a href="/further-blog-tuning.html#disqus_thread">comments</a>.</p>                </div><!-- /.entry-content -->
-            </article></li>
+</footer><!-- /.post-info --><p><strong>Code Highlighting </strong></p>
+<p>Pelican supports code highlighting via <a href="http://pythonhosted.org/Markdown/extensions/code_hilite.html">code hilite</a> with coloring provided by <a href="http://pygments.org/">pygments</a></p>
+<p>In Markdown you display code like this
+    ::: python
+    import this
+    print('Hello world!')</p><p>There are <a href="/further-blog-tuning.html#disqus_thread">comments</a>.</p>                </article>
+            </aside><!-- /#featured -->
+                <section id="content" class="body">
+                    <h1>Other articles</h1>
+                    <hr />
+                    <ol id="posts-list" class="hfeed">
 
             <li><article class="hentry">
                 <header>
@@ -93,28 +66,6 @@ There are at least two supported languages: lua and python. I chose python. Ther
 </footer><!-- /.post-info -->                <p>Things you want to do after the Getting started tutorial from beautiful soap website</p>
                 <a class="readmore" href="/beautiful-soap-next-step-after-beginner-tutorial.html">read more</a>
 <p>There are <a href="/beautiful-soap-next-step-after-beginner-tutorial.html#disqus_thread">comments</a>.</p>                </div><!-- /.entry-content -->
-            </article></li>
-
-            <li><article class="hentry">
-                <header>
-                    <h1><a href="/about-git-submodules.html" rel="bookmark"
-                           title="Permalink to About git submodules">About git submodules</a></h1>
-                </header>
-
-                <div class="entry-content">
-<footer class="post-info">
-        <abbr class="published" title="2013-10-23T00:00:00">
-                Mi 23 Oktober 2013
-        </abbr>
-
-        <address class="vcard author">
-                By <a class="url fn" href="/author/berend.html">berend</a>
-        </address>
-<p>In <a href="/category/blog.html">blog</a>. </p>
-<p>tags: <a href="/tag/git.html">git</a><a href="/tag/submodule.html">submodule</a></p>
-</footer><!-- /.post-info -->                <p>How to git submodule</p>
-                <a class="readmore" href="/about-git-submodules.html">read more</a>
-<p>There are <a href="/about-git-submodules.html#disqus_thread">comments</a>.</p>                </div><!-- /.entry-content -->
             </article></li>
 
             <li><article class="hentry">
@@ -167,7 +118,7 @@ There are at least two supported languages: lua and python. I chose python. Ther
         </footer><!-- /#contentinfo -->
 
 <script type="text/javascript">
-    var disqus_shortname = 'http://berendkapelle.disqus.com/';
+    var disqus_shortname = 'berendkapelle.disqus.com/';
     (function () {
         var s = document.createElement('script'); s.async = true;
         s.type = 'text/javascript';
