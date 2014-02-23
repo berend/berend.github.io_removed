@@ -1,46 +1,37 @@
-<!DOCTYPE html>
-<html lang="en">
+<!doctype html>
+<html lang="">	
 <head>
-        <meta charset="utf-8" />
-        <title>First blog posting</title>
-        <link rel="stylesheet" href="/theme/css/main.css" />
-
-        <!--[if IE]>
-            <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
-        <![endif]-->
+	<meta charset="utf-8"/>
+	<title>First blog posting - home of berend</title>	
+	<meta name="author" content="berend">
+	
+	<meta name="HandheldFriendly" content="True">
+	<meta name="MobileOptimized" content="320">
+	<meta name="viewport" content="width=device-width, target-densitydpi=160dpi, initial-scale=1.0">
+	
+	<link href='http://fonts.googleapis.com/css?family=Droid+Sans:700,400|Droid+Sans+Mono' rel='stylesheet' type='text/css'>
+	<link rel="stylesheet" href="/theme/css/main.css" type="text/css" />
+		
+	<!--[if lt IE 9]>
+		<script src="//html5shim.googlecode.com/svn/trunk/html5.js"></script>
+	<![endif]-->
+	
+	
+	<link href="/" type="application/atom+xml" rel="alternate" title="home of berend ATOM Feed" />
 </head>
-
-<body id="index" class="home">
-<a href="http://github.com/berend">
-<img style="position: absolute; top: 0; right: 0; border: 0;" src="http://s3.amazonaws.com/github/ribbons/forkme_right_red_aa0000.png" alt="Fork me on GitHub" />
-</a>
-        <header id="banner" class="body">
-                <h1><a href="/">home of berend </a></h1>
-                <nav><ul>
-                    <li class="active"><a href="/category/blog.html">blog</a></li>
-                </ul></nav>
-        </header><!-- /#banner -->
-<section id="content" class="body">
-  <article>
-    <header>
-      <h1 class="entry-title">
-        <a href="/first-blog-posting.html" rel="bookmark"
-           title="Permalink to First blog posting">First blog posting</a></h1>
-<a href="http://twitter.com/share" class="twitter-share-button" data-count="horizontal" data-via="berendkapelle">Tweet</a><script type="text/javascript" src="http://platform.twitter.com/widgets.js"></script>
-    </header>
-
-    <div class="entry-content">
-<footer class="post-info">
-        <abbr class="published" title="2013-10-23T00:00:00">
-                Mi 23 Oktober 2013
-        </abbr>
-
-        <address class="vcard author">
-                By <a class="url fn" href="/author/berend.html">berend</a>
-        </address>
-<p>In <a href="/category/blog.html">blog</a>. </p>
-<p>tags: <a href="/tag/pelican.html">pelican</a><a href="/tag/publishing.html">publishing</a></p>
-</footer><!-- /.post-info -->      <p><strong>Overview</strong></p>
+	
+<body>		
+	<header class="clearfix" role="banner">
+		<div class="wrapper">
+			<h1 class="huge"><a href="">home of berend</a></h1>
+		</div>
+	</header>
+	
+<div role="main" class="content clearfix">	
+	<article>
+		<div class="post wrapper">
+			<h1>First blog posting</h1>
+			<p><strong>Overview</strong></p>
 <p>This a short write up how I created this blog with pelican, markdown and github pages.</p>
 <p>Prerequisites:</p>
 <ul>
@@ -80,44 +71,59 @@ Now you should have the basic structure in your source, and as well as the defau
 <code>yadayada</code></p>
 <p><strong>Themes</strong></p>
 <p>Right now you are using the default template for your blog. You dont have to. there is plenty of material out there you can easily use. I will write up later how to do that. Right now I just want to bring this online.</p>
-    </div><!-- /.entry-content -->
-
-  </article>
-</section>
-        <section id="extras" class="body">
-                <div class="blogroll">
-                        <h2>blogroll</h2>
-                        <ul>
-                            <li><a href="http://getpelican.com/">Pelican</a></li>
-                            <li><a href="http://python.org/">Python.org</a></li>
-                        </ul>
-                </div><!-- /.blogroll -->
-                <div class="social">
-                        <h2>social</h2>
-                        <ul>
-
-                            <li><a href="https://plus.google.com/u/0/113188176155658359858/posts">Google+</a></li>
-                            <li><a href="https://twitter.com/berendkapelle">@berendkapelle</a></li>
-                        </ul>
-                </div><!-- /.social -->
-        </section><!-- /#extras -->
-
-        <footer id="contentinfo" class="body">
-                <address id="about" class="vcard body">
-                Proudly powered by <a href="http://getpelican.com/">Pelican</a>, which takes great advantage of <a href="http://python.org">Python</a>.
-                </address><!-- /#about -->
-
-                <p>The theme is by <a href="http://coding.smashingmagazine.com/2009/08/04/designing-a-html-5-layout-from-scratch/">Smashing Magazine</a>, thanks!</p>
-        </footer><!-- /#contentinfo -->
-
-<script type="text/javascript">
-    var disqus_shortname = 'berendkapelle';
-    (function () {
-        var s = document.createElement('script'); s.async = true;
-        s.type = 'text/javascript';
-        s.src = 'http://' + disqus_shortname + '.disqus.com/count.js';
-        (document.getElementsByTagName('HEAD')[0] || document.getElementsByTagName('BODY')[0]).appendChild(s);
-    }());
-</script>
+			
+			<a href="https://twitter.com/share" class="twitter-share-button" data-via="berendkapelle" data-lang="en" data-size="large" data-related="berendkapelle">Tweet</a>
+			<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="//platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+						
+			<div class="comments">
+			<h2>Comments !</h2>
+			    <div id="disqus_thread"></div>
+			    <script type="text/javascript">
+			       var disqus_identifier = "first-blog-posting.html";
+			       (function() {
+			       var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+			       dsq.src = '//berendkapelle.disqus.com/embed.js';
+			       (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+			      })();
+			    </script>
+			</div>
+			
+		</div>
+	
+<div class="meta wrapper">
+	<time datetime="2013-10-23T00:00:00" pubdate>Mi 23 Oktober 2013</time>
+	<ul class="tag clearfix">
+		<li><a href="/category/blog.html">blog</a></li>
+		<li><a href="/tag/pelican.html">pelican</a></li>
+		<li><a href="/tag/publishing.html">publishing</a></li>
+	</ul>
+</div>	</article>	
+</div>
+	
+		
+<footer class="clearfix">
+	<div class="wrapper pages">
+		<ul class="nav">
+			<li><a href="/archives.html">Archive</a></li>
+		</ul>
+	</div>
+	
+	<div class="copy wrapper">
+		<ul class="social">
+			<li><a href="https://plus.google.com/u/0/113188176155658359858/posts">Google+</a></li>
+			<li><a href="https://twitter.com/berendkapelle">@berendkapelle</a></li>
+		</ul>
+	
+		<p role="contentinfo">© 2012 berend<br>
+		Proudly powered by <a href="http://alexis.notmyidea.org/pelican/">Pelican</a>.</p>
+	</div>
+</footer>
+	
+	<script>
+	  var _gaq=[['_setAccount',''],['_trackPageview']];
+	  (function(d,t){var g=d.createElement(t),s=d.getElementsByTagName(t)[0];
+	  g.src=('https:'==location.protocol?'//ssl':'//www')+'.google-analytics.com/ga.js';
+	  s.parentNode.insertBefore(g,s)}(document,'script'));
+	</script>
 </body>
 </html>
