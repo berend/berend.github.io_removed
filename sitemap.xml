@@ -7,15 +7,39 @@
                         http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
  <url>
   <loc>https://berend.github.io/</loc>
-  <lastmod>2016-06-09T20:39:00Z</lastmod>
+  <lastmod>2016-06-14T21:26:00Z</lastmod>
  </url>
  <url>
   <loc>https://berend.github.io/2016/</loc>
   <lastmod>2016-06-09T20:39:00Z</lastmod>
  </url>
  <url>
+  <loc>https://berend.github.io/about-git-submodules.html</loc>
+  <lastmod>2016-06-14T21:26:00Z</lastmod>
+ </url>
+ <url>
   <loc>https://berend.github.io/archive.html</loc>
   <lastmod>2016-06-14T21:01:00Z</lastmod>
+ </url>
+ <url>
+  <loc>https://berend.github.io/archives.html</loc>
+  <lastmod>2016-06-14T21:26:00Z</lastmod>
+ </url>
+ <url>
+  <loc>https://berend.github.io/author/alexis-metaireau.html</loc>
+  <lastmod>2016-06-14T21:26:00Z</lastmod>
+ </url>
+ <url>
+  <loc>https://berend.github.io/author/berend.html</loc>
+  <lastmod>2016-06-14T21:26:00Z</lastmod>
+ </url>
+ <url>
+  <loc>https://berend.github.io/authors.html</loc>
+  <lastmod>2016-06-14T21:26:00Z</lastmod>
+ </url>
+ <url>
+  <loc>https://berend.github.io/beautiful-soap-next-step-after-beginner-tutorial.html</loc>
+  <lastmod>2016-06-14T21:26:00Z</lastmod>
  </url>
  <url>
   <loc>https://berend.github.io/categories/</loc>
@@ -50,12 +74,36 @@
   <lastmod>2016-06-14T21:01:00Z</lastmod>
  </url>
  <url>
+  <loc>https://berend.github.io/category/blog.html</loc>
+  <lastmod>2016-06-14T21:26:00Z</lastmod>
+ </url>
+ <url>
+  <loc>https://berend.github.io/category/python.html</loc>
+  <lastmod>2016-06-14T21:26:00Z</lastmod>
+ </url>
+ <url>
+  <loc>https://berend.github.io/customizing-mysql-workbench.html</loc>
+  <lastmod>2016-06-14T21:26:00Z</lastmod>
+ </url>
+ <url>
+  <loc>https://berend.github.io/first-blog-posting.html</loc>
+  <lastmod>2016-06-14T21:26:00Z</lastmod>
+ </url>
+ <url>
+  <loc>https://berend.github.io/further-blog-tuning.html</loc>
+  <lastmod>2016-06-14T21:26:00Z</lastmod>
+ </url>
+ <url>
   <loc>https://berend.github.io/galleries/</loc>
   <lastmod>2016-06-09T18:27:00Z</lastmod>
  </url>
  <url>
   <loc>https://berend.github.io/listings/</loc>
   <lastmod>2016-06-09T18:27:00Z</lastmod>
+ </url>
+ <url>
+  <loc>https://berend.github.io/my-super-post.html</loc>
+  <lastmod>2016-06-14T21:26:00Z</lastmod>
  </url>
  <url>
   <loc>https://berend.github.io/posts/about-libraries-i-use/</loc>
@@ -68,5 +116,49 @@
  <url>
   <loc>https://berend.github.io/posts/about-this-blog2/</loc>
   <lastmod>2016-06-10T07:29:00Z</lastmod>
+ </url>
+ <url>
+  <loc>https://berend.github.io/tag/beautiful_soap.html</loc>
+  <lastmod>2016-06-14T21:26:00Z</lastmod>
+ </url>
+ <url>
+  <loc>https://berend.github.io/tag/blog.html</loc>
+  <lastmod>2016-06-14T21:26:00Z</lastmod>
+ </url>
+ <url>
+  <loc>https://berend.github.io/tag/git.html</loc>
+  <lastmod>2016-06-14T21:26:00Z</lastmod>
+ </url>
+ <url>
+  <loc>https://berend.github.io/tag/mysql.html</loc>
+  <lastmod>2016-06-14T21:26:00Z</lastmod>
+ </url>
+ <url>
+  <loc>https://berend.github.io/tag/pelican.html</loc>
+  <lastmod>2016-06-14T21:26:00Z</lastmod>
+ </url>
+ <url>
+  <loc>https://berend.github.io/tag/publishing.html</loc>
+  <lastmod>2016-06-14T21:26:00Z</lastmod>
+ </url>
+ <url>
+  <loc>https://berend.github.io/tag/python.html</loc>
+  <lastmod>2016-06-14T21:26:00Z</lastmod>
+ </url>
+ <url>
+  <loc>https://berend.github.io/tag/submodule.html</loc>
+  <lastmod>2016-06-14T21:26:00Z</lastmod>
+ </url>
+ <url>
+  <loc>https://berend.github.io/tag/web-crawling.html</loc>
+  <lastmod>2016-06-14T21:26:00Z</lastmod>
+ </url>
+ <url>
+  <loc>https://berend.github.io/tag/workbench.html</loc>
+  <lastmod>2016-06-14T21:26:00Z</lastmod>
+ </url>
+ <url>
+  <loc>https://berend.github.io/tags.html</loc>
+  <lastmod>2016-06-14T21:26:00Z</lastmod>
  </url>
 </urlset>
