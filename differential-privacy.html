@@ -116,7 +116,8 @@ h2 {
 h3,
 h4 {
   font-family: 'Fredericka the Great', cursive;
-  font-weight: 0.8em;
+  font-weight: 100;
+  font-size: 0.8em;
 }
 article {
   margin: 0;
@@ -1362,7 +1363,7 @@ h6:hover .anchor-link {
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h1 id="Differential-privacy-for-GDPR-compliance">Differential privacy for GDPR compliance<a class="anchor-link" href="#Differential-privacy-for-GDPR-compliance">&#182;</a></h1><p>I came along this topic while searching for methods to gather business intelligence data in a GDPR conform way. General Data Protection Regulation  will be implemented on 2018-05-25 in Europe and is quite difficult to transfer into real world processes. It comes also with <a href="https://en.wikipedia.org/wiki/General_Data_Protection_Regulation#Sanctions">hefty penalties</a>, so that every company that processes personal data should take the time to check their data processing workflows.</p>
+<p>I came along this topic while searching for methods to gather business intelligence data in a GDPR conform way. General Data Protection Regulation  will be implemented on 2018-05-25 in Europe and is quite difficult to transfer into real world processes. It comes also with <a href="https://en.wikipedia.org/wiki/General_Data_Protection_Regulation#Sanctions">hefty penalties</a>, so that every company that processes personal data should take the time to check their data processing workflows.</p>
 <p>Differential privacy is still not widely known, also there is quite a bit discourse if it hold up to its promises at all. Since by now also Google and Apple claim to use differential privacy, I started investigating it by reading "the"
 book on differential privacy by Cynthia Dwork. You can download for free <a href="https://www.cis.upenn.edu/~aaroth/Papers/privacybook.pdf">here</a>.</p>
 <p>I am assuming in my example (simplified) that there are two systems:</p>
@@ -1370,11 +1371,11 @@ book on differential privacy by Cynthia Dwork. You can download for free <a href
 <li>one system that holds data bound to privacy constraints, but all access is restricted by passwords, encryption and similar, so that only the user it self can access his data. </li>
 <li>one system that collects overall data needed for business development. This may be a huge database where all other systems (incl. the one system mentioned above) just sent their stats to and that generates the reports for business management.</li>
 </ul>
-<p>The problem is the following: How can we make sure that no privacy concerns are violated when sending data to the central data pool system? Statistics can be simple ones as active users up to data that will be used for active learning in a machine learning based scenario. Even data that is not directly bound to persons can be used in combination with other (meta) data to deanonymize information. See these two examples.</p>
+<p>The problem is the following: How can we make sure that no privacy concerns are violated when sending data to the central data pool system? Statistics can be simple ones as active users up to data that will be used for active learning in a machine learning based scenario. Even data that is not directly bound to persons can be used in combination with other (meta) data to deanonymize information. See this example: Deanonymization of the <a href="https://www.cs.utexas.edu/~shmat/shmat_oak08netflix.pdf">Netflix dataset prize</a></p>
 <p>Differential privacy makes this bold promise:</p>
 <blockquote><p>Learn nothing about the individual, learn something about the population.</p>
 </blockquote>
-<p>Let make a simple example:
+<p>Let's make a simple example:
 We want to learn about a population how many people are Justin Bieber Fans - without knowing this excatly for one user to not violate the privay of that user. So we need to make sure, that we can not draw any conclusion in that central system once the data is sent. Normal "attack" or "exploit" vectors would be to ask the central database before and after data sending. By knowing the Bieber fans before and after that one users statistics were sent an attacker could learn if that persons is Bieber fans or not. Not good!</p>
 <p>Let's improve. We need to add noise or fake data, so that we can not tell for sure what happens per user basis. Since our data in this simplified example is only binary, we add noise.</p>
 <h2 id="Simple-example">Simple example<a class="anchor-link" href="#Simple-example">&#182;</a></h2><p>Let us put this into code and play a bit with that scenario. When sending one person's data into the data set, we add noise:</p>
@@ -1423,8 +1424,8 @@ We want to learn about a population how many people are Justin Bieber Fans - wit
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="kn">from</span> <span class="nn">random</span> <span class="k">import</span> <span class="n">random</span>
 
-
-<span class="n">fuzz</span> <span class="o">=</span> <span class="k">lambda</span> <span class="n">x</span><span class="p">:</span> <span class="n">x</span> <span class="k">if</span> <span class="n">random</span><span class="p">()</span> <span class="o">&gt;</span> <span class="mf">0.5</span> <span class="k">else</span> <span class="n">random</span><span class="p">()</span> <span class="o">&gt;</span> <span class="mf">0.5</span>
+<span class="k">def</span> <span class="nf">fuzz</span><span class="p">(</span><span class="n">x</span><span class="p">):</span>
+    <span class="k">return</span> <span class="n">x</span> <span class="k">if</span> <span class="n">random</span><span class="p">()</span> <span class="o">&gt;</span> <span class="mf">0.5</span> <span class="k">else</span> <span class="n">random</span><span class="p">()</span> <span class="o">&gt;</span> <span class="mf">0.5</span>
 </pre></div>
 
 </div>
